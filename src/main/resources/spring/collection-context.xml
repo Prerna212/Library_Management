@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- <bean id="injectCollection" class="com.github.prerna.springPractice.collection.CollectionInjection">
+         <property name="map">
+             <map>
+                 <entry key="arsh">
+                     <value>"Kutta</value>
+                 </entry>
+                 <entry key="Prerna">
+                     <value>"samjhdar"</value>
+                 </entry>
+             </map>
+         </property>
+         <property name="props">
+             <props>
+                 <prop key="FirstName">Prerna</prop>
+                 <prop key="LastName">Verma</prop>
+             </props>
+         </property>
+         <property name="set">
+             <set>
+                 <value>sbvddvij</value>
+             </set>
+         </property>
+         <property name="list">
+             <list>
+                 <value>ncuewdid</value>
+             </list>
+         </property>
+     </bean>
+     -->
+    <context:component-scan
+        base-package="com.github.prerna.springPractice.collection"/>
+
+    <util:map id="map" map-class="java.util.HashMap">
+        <entry key="Arsh" value="adcd" />
+        <entry key="Prerna" value="dvdv" />
+    </util:map>
+
+    <util:properties id="props">
+        <prop key="fname">Prerna</prop>
+        <prop key="lname">Verma</prop>
+    </util:properties>
+
+    <util:list id="list">
+        <value>dfdudicj</value>
+    </util:list>
+
+    <util:set id="set">
+        <value>cbudcowkdokswqs</value>
+    </util:set>
+</beans>

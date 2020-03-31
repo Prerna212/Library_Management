@@ -1,0 +1,3 @@
+rootProject.name = 'lib-mgmt'
+include 'Singer'
+

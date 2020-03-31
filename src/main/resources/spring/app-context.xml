@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--
+ <bean id="provider"
+      class="com.github.prerna.springPractice.StandardMessageProvider">
+ <constructor-arg value="I hope that someone gets my message in a bottle"/>
+</bean>
+<bean id="renderer"
+      class="com.github.prerna.springPractice.StandardOutMessageRenderer"
+      p:messageProvider-ref="provider" />
+ <bean id="oracle"
+       name = "wiseworm"
+       class="com.github.prerna.springPractice.DependencyInjection.BookWormOracle"/>
+ -->
+
+ <context:component-scan
+  base-package="com.github.prerna.springPractice"/>
+ <bean id="message" class="kava.lang.Sting">     <constructor-arg value="hello" />
+ </bean>
+
+</beans>
